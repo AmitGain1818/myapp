@@ -21,20 +21,18 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text("This is qustions"),
+            Text('This Is Questions'),
             RaisedButton(
-              child: Text('Answer 1'),
+              child: Text(questions[0]),
               onPressed: answerQuestons,
             ),
             RaisedButton(
-              child: Text('Answer 2'),
-              onPressed: () => print('you chose answer 2'),
+              child: Text(questions[1]),
+              onPressed: answerQuestons,
             ),
             RaisedButton(
-              child: Text('Answer 2'),
-              onPressed: () {
-                print('you have chose answer 3');
-              },
+              child: Text(questions[2]),
+              onPressed: answerQuestons,
             ),
           ],
         ),
