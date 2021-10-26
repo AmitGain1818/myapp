@@ -4,10 +4,10 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   var answerIndex = 0;
   void answerQuestons() {
     setState(() {
@@ -30,17 +30,17 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Text('This Is Questions'),
+            Text(questions[answerIndex]),
             RaisedButton(
-              child: Text(questions[0]),
+              child: Text('This is the 1st'),
               onPressed: answerQuestons,
             ),
             RaisedButton(
-              child: Text(questions[1]),
+              child: Text('This is the 2nd'),
               onPressed: answerQuestons,
             ),
             RaisedButton(
-              child: Text(questions[2]),
+              child: Text('This is the 3rd'),
               onPressed: answerQuestons,
             ),
           ],
